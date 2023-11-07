@@ -17,9 +17,9 @@ export class ListComponent {
   ];
 
   @Output()
-  onDelete: EventEmitter<number> = new EventEmitter<number>();
+  onDelete: EventEmitter<string> = new EventEmitter<string>();
 
-  onDeleteCharacter(index: number) {
-    this.onDelete.emit(index);
+  onDeleteCharacter(id: string) {
+    this.onDelete.emit(id);
   }
 }
